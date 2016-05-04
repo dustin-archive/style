@@ -1,0 +1,92 @@
+%style-padding {
+  padding: em(4 16);
+}
+
+%style-border {
+  padding: em(2 14);
+  border: em(2) solid $gray-3;
+}
+
+%style-gray {
+  color: $gray-1;
+  background: $gray-3;
+}
+
+// ====
+
+#{$button} {
+  @extend %style-gray;
+  @extend %style-padding;
+}
+
+#{$code} {
+  @extend %style-gray;
+  font-family: 'Menlo', monospace;
+  font-size: 1rem;
+}
+
+// ====
+
+input {
+  color: $gray-1;
+
+  &::-webkit-input-placeholder {
+    color: $gray-2;
+  }
+}
+
+textarea {
+  color: $gray-1;
+
+  &::-webkit-input-placeholder {
+    color: $gray-2;
+  }
+}
+
+// ====
+
+blockquote {
+  @extend %reset-gray;
+  @extend %reset-padding;
+  border-left: em(4) $gray-2;
+}
+
+code {
+  padding: em(2 4);
+}
+
+fieldset {
+  @extend %reset-border;
+}
+
+input {
+  &[type='password'] {
+    @extend %reset-border;
+  }
+
+  &[type='submit'] {
+    @extend %reset-border;
+  }
+
+  &[type='text'] {
+    @extend %reset-border;
+  }
+}
+
+figure {
+  @extend %reset-gray;
+  padding: em(4 32);
+}
+
+img {
+  width: 100%;
+}
+
+pre {
+  @extend %reset-padding;
+}
+
+textarea {
+  @extend %reset-border;
+  height: em(64);
+}
