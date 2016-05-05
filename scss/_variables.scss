@@ -1,0 +1,10 @@
+// It's probably a not a good idea to modify these variables unless you're
+// modifying or extending plate-sass because they're not universally applied to
+// all elements.
+
+// $line-height: 1.5 !default;
+
+$gray-1: tint($black, $white, 1 / 2) !default;
+$gray-2: tint($black, $white, 1 / 4) !default;
+$gray-3: tint($black, $white, 1 / 8) !default;
+$gray-4: tint($black, $white, 1 / 16) !default;
